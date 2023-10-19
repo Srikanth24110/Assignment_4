@@ -1,0 +1,156 @@
+
+*1.Multiple inheritance
+
+package Assignments;
+
+abstract class Vehicle
+{
+	abstract void speed();
+}
+class car extends Vehicle 
+{
+	void speed()
+	{
+		System.out.println("120");
+	}
+}
+	
+class lorry extends Vehicle
+{
+    void speed()
+    
+    {
+    	System.out.println("150");
+    }
+}
+
+public class Abst_inh {
+
+	public static void main(String[] args) {
+		lorry l = new lorry();
+		l.speed();
+		car c =new car();
+		c.speed();
+
+	}
+
+}
+
+
+
+* 2.Super variable
+
+package Assignments;
+
+class Sir
+{
+	int eid =10;
+}
+	
+class Student extends Sir{
+	int eid =30;
+	
+	void show() 
+{	
+	System.out.println(super.eid);	
+}
+}
+
+public class Super {
+
+	public static void main(String[] args) {
+		
+		Student s =new Student();
+		s.show();
+	}
+		}
+
+
+
+*3.method overiding
+
+package Assignments;
+class Bank
+{
+	void intr()
+	{
+		System.out.println("0% intrest");
+	}
+}
+
+class Sbi extends Bank 
+{
+	void intr()	
+	{
+		System.out.println("7% intrest");
+		
+	}
+}
+
+class Axis extends Bank{
+	
+	void intr()
+	
+	{
+		System.out.println("8% intrest");
+	}
+}
+
+class Icici extends Bank
+{
+		void intr()
+		{
+			System.out.println("9% intrest");
+		}
+	
+}
+public class Overide {
+	public static void main(String[] args) {
+		
+		Sbi s1= new  Sbi();
+		s1.intr();
+		Axis a1 = new Axis();
+		a1.intr();
+		Icici b1 = new Icici();
+		b1.intr();
+	}
+}
+
+
+
+*5.Abstract class using Hirerchial inhertiance
+
+package Assignments;
+
+abstract class Vehicle
+{
+	abstract void speed();
+}
+class car extends Vehicle 
+{
+	void speed()
+	{
+		System.out.println("120");
+	}
+}
+	
+class lorry extends Vehicle
+{
+    void speed()
+    
+    {
+    	System.out.println("150");
+    }
+}
+
+public class Abst_inh {
+
+	public static void main(String[] args) {
+		lorry l = new lorry();
+		l.speed();
+		car c =new car();
+		c.speed();
+
+	}
+
+}
